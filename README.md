@@ -17,36 +17,7 @@ Business problem-solving queries
 
 Query optimization (with and without indexes)
 
-🗄️ Database Schema
-
-Table: spotify
-
-Column	Type	Description
-artist	VARCHAR	Artist name
-track	VARCHAR	Track name
-album	VARCHAR	Album name
-album_type	VARCHAR	Album type (album / single / compilation)
-danceability	FLOAT	Danceability score
-energy	FLOAT	Energy score
-loudness	FLOAT	Loudness (db)
-speechiness	FLOAT	Speechiness score
-acousticness	FLOAT	Acousticness score
-instrumentalness	FLOAT	Instrumentalness score
-liveness	FLOAT	Liveness score
-valence	FLOAT	Positiveness of track
-tempo	FLOAT	Tempo (BPM)
-duration_min	FLOAT	Duration in minutes
-title	VARCHAR	Video/Track title
-channel	VARCHAR	YouTube channel
-views	FLOAT	Views on YouTube
-likes	BIGINT	Number of likes
-comments	BIGINT	Number of comments
-licensed	BOOLEAN	Whether track is licensed
-official_video	BOOLEAN	Whether official video exists
-stream	BIGINT	Total Spotify streams
-energy_liveness	FLOAT	Energy-to-liveness ratio
-most_played_on	VARCHAR	Platform with most streams (Spotify / YouTube)
-🔎 Exploratory Data Analysis (EDA)
+#🔎 Exploratory Data Analysis (EDA)
 
 Some example EDA queries include:
 
@@ -58,7 +29,7 @@ Identifying most viewed songs and popular platforms
 
 Exploring distinct album types and channels
 
-💡 Business Problem Queries
+#💡 Business Problem Queries
 
 The project answers multiple business-driven queries, such as:
 
@@ -78,7 +49,7 @@ Tracks streamed more on Spotify vs YouTube
 
 Energy-to-liveness ratio analysis
 
-⚡ Query Optimization
+#⚡ Query Optimization
 
 To demonstrate performance improvements, queries are compared:
 
@@ -97,7 +68,7 @@ ORDER BY views DESC;
 -- With index
 CREATE INDEX artist_index ON spotify(artist);
 
-🚀 How to Use
+🚀# How to Use
 
 Import the sql_project.sql file into your SQL environment (PostgreSQL/MySQL).
 
@@ -111,7 +82,7 @@ Test business problem queries for insights.
 
 Compare query performance with and without indexes.
 
-📊 Key Insights
+📊# Key Insights
 
 Dataset contains 20,592 tracks after cleaning.
 
@@ -123,9 +94,9 @@ Over 385 tracks have 1B+ streams.
 
 Spotify dominates streaming for 15,692 tracks.
 
-🛠️ Technologies Used
+🛠️ #Technologies Used
 
-SQL (PostgreSQL/MySQL compatible)
+SQL (PostgreSQL)
 
 Window Functions
 
