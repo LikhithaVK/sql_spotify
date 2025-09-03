@@ -68,7 +68,10 @@ FROM spotify
 WHERE artist = 'Gorillaz'
 ORDER BY views DESC;
 
-.sql1.png
+
+
+![Dashboard Screenshot](sql1.png)
+![Dashboard Screenshot](sql2.png)
 
 -- With index
 CREATE INDEX artist_index ON spotify(artist);
