@@ -17,7 +17,8 @@ Business problem-solving queries
 
 Query optimization (with and without indexes)
 
-#🔎 Exploratory Data Analysis (EDA)
+
+🔎 Exploratory Data Analysis (EDA)
 
 Some example EDA queries include:
 
@@ -29,7 +30,8 @@ Identifying most viewed songs and popular platforms
 
 Exploring distinct album types and channels
 
-#💡 Business Problem Queries
+
+💡 Business Problem Queries
 
 The project answers multiple business-driven queries, such as:
 
@@ -49,7 +51,8 @@ Tracks streamed more on Spotify vs YouTube
 
 Energy-to-liveness ratio analysis
 
-#⚡ Query Optimization
+
+⚡ Query Optimization
 
 To demonstrate performance improvements, queries are compared:
 
@@ -65,10 +68,13 @@ FROM spotify
 WHERE artist = 'Gorillaz'
 ORDER BY views DESC;
 
+.sql1.png
+
 -- With index
 CREATE INDEX artist_index ON spotify(artist);
+.sql2.png
 
-🚀# How to Use
+🚀 How to Use
 
 Import the sql_project.sql file into your SQL environment (PostgreSQL/MySQL).
 
@@ -82,7 +88,8 @@ Test business problem queries for insights.
 
 Compare query performance with and without indexes.
 
-📊# Key Insights
+
+📊 Key Insights
 
 Dataset contains 20,592 tracks after cleaning.
 
@@ -94,7 +101,8 @@ Over 385 tracks have 1B+ streams.
 
 Spotify dominates streaming for 15,692 tracks.
 
-🛠️ #Technologies Used
+
+🛠️ Technologies Used
 
 SQL (PostgreSQL)
 
