@@ -71,11 +71,10 @@ ORDER BY views DESC;
 
 
 ![Dashboard Screenshot](sql1.png)
-![Dashboard Screenshot](sql2.png)
 
 -- With index
 CREATE INDEX artist_index ON spotify(artist);
-.sql2.png
+![Dashboard Screenshot](sql2.png)
 
 🚀 How to Use
 
